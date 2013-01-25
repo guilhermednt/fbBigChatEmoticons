@@ -1,0 +1,13 @@
+{
+	"manifest_version": 2,
+	"name": "Bigger Custom Emoticons - Facebook Chat",
+	"version": "1.2",
+	"description": "Lets the custom emoticons on facebook's chat (like [[page_title]]) be displayed at it's maximum size (50px)",
+	"icons": { "128": "facebook-chat-logo.png" },
+	"content_scripts": [
+		{
+			"matches": ["http://www.facebook.com/*", "http://apps.facebook.com/*", "https://www.facebook.com/*", "https://apps.facebook.com/*"],
+			"css": ["facebook.css"]
+		}
+	]
+}
